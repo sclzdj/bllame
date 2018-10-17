@@ -1,0 +1,119 @@
+body a, body a:hover {
+    text-decoration: none;
+}
+
+body dl.left-menu-item dd:hover {
+    background-color: #333333;
+}
+
+body li.top-nav-active {
+    background-color: #393D49;
+}
+
+body dl dd.top-other-nav-active {
+    background-color: #eaeaea;
+}
+
+body li.left-menu-active, body dd.left-menu-active {
+    background-color: #009688;
+}
+
+body .layui-nav .top_other_nav .layui-nav-more {
+    right: 15px;
+}
+
+body .layui-btn-success {
+    background-color: #28a745;
+}
+
+body .from-search-size, body input.from-search-size:not([size]), body select.from-search-size:not([size]):not([multiple]) {
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+}
+
+body .from-search-font-size, body input.from-search-font-size, body select.from-search-font-size {
+    font-size: 14px;
+}
+
+body [readonly].austom-readonly {
+    background-color: #ffffff;
+}
+
+body .demo-warning {
+    color: #ffb801;
+    min-width: 300px;
+}
+
+body .demo-warning .layui-layer-title {
+    background: #ffb801;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+body .demo-warning .layui-layer-content {
+    font-size: 14px;
+    color: #ffb801;
+}
+
+body .demo-success {
+    min-width: 300px;
+}
+
+body .demo-success .layui-layer-title {
+    background: #28a745;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+body .demo-success .layui-layer-content {
+    font-size: 14px;
+    color: #28a745;
+}
+
+body .demo-danger {
+    min-width: 300px;
+}
+
+body .demo-danger .layui-layer-title {
+    background: #ff5722;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+body .demo-danger .layui-layer-content {
+    font-size: 14px;
+    color: #ff5722;
+}
+
+body .demo-deault {
+    min-width: 300px;
+}
+
+body .demo-deault .layui-layer-title {
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+body .demo-deault .layui-layer-content {
+    font-size: 14px;
+}
+
+body .body-center{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

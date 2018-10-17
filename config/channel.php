@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'Admin'=>[//大模块列表，必须和模块目录同名
+        'title'=>'系统',
+        'channel'=>[
+            'home'=>[
+                'title'=>'主页模块',//一级节点标题
+                'type'=>0,//是否有只节点
+                'uses'=>'App\\Http\\Controllers\\Admin\\IndexController@index',//对应的控制器方法
+                'controller'=>'App\\Http\\Controllers\\Admin\\IndexController',//对应的控制器
+            ],
+            'system'=>[
+                'title'=>'系统模块',
+                'type'=>1,
+                'list'=>[//二级级节点列表
+                    ['title'=>'用户管理','uses'=>'App\\Http\\Controllers\\Admin\\AdminController@index','controller'=>'App\\Http\\Controllers\\Admin\\AdminController'],
+                    ['title'=>'角色管理','uses'=>'App\\Http\\Controllers\\Admin\\RoleController@index','controller'=>'App\\Http\\Controllers\\Admin\\RoleController'],
+                    ['title'=>'节点管理','uses'=>'App\\Http\\Controllers\\Admin\\NodeController@index','controller'=>'App\\Http\\Controllers\\Admin\\NodeController'],
+                ],
+            ],
+            'article'=>[
+                'title'=>'文章模块',
+                'type'=>1,
+                'list'=>[
+                    ['title'=>'文章管理','uses'=>'App\\Http\\Controllers\\Admin\\ArticleController@index','controller'=>'App\\Http\\Controllers\\Admin\\ArticleController'],
+                    ['title'=>'分类管理','uses'=>'App\\Http\\Controllers\\Admin\\CategoryController@index','controller'=>'App\\Http\\Controllers\\Admin\\CategoryController'],
+                ],
+            ],
+        ],
+    ],
+];
